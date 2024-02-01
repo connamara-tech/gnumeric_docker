@@ -1,6 +1,6 @@
 FROM debian:12
 
-RUN apt-get update && apt-get install -y --no-install-recommends gnumeric && \
+RUN apt-get update && apt-get install -y --no-install-recommends gnumeric rename && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /.cache && chmod -R 777 /.cache
